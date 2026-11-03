@@ -1,0 +1,341 @@
+:root {
+    --color-primary: #05204A;
+    --color-secondary: #B497D6;
+    --color-accent: #6F9ED6;
+    --color-background: #202024;
+    --color-text: #E1E2EF;
+    --color-muted: #8A95A5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-secondary);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body > header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 16px 24px;
+    background-color: var(--color-primary);
+}
+
+body > header > p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+body > header > nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-left: auto;
+}
+
+.button,
+body > header > nav a,
+body > footer > nav a {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid var(--color-secondary);
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover,
+body > header > nav a:hover,
+body > footer > nav a:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.button:focus-visible,
+body > header > nav a:focus-visible,
+body > footer > nav a:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 4px;
+    text-decoration: none;
+}
+
+body > footer > nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+}
+
+.home-grid > section {
+    min-width: 0;
+}
+
+#about-me,
+#project-overview,
+#contact {
+    grid-column: 1 / -1;
+}
+
+#contact form {
+    display: grid;
+    gap: 12px;
+    max-width: 600px;
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+    width: 100%;
+    padding: 12px;
+    font: inherit;
+    border: 1px solid var(--color-muted);
+    border-radius: 4px;
+}
+
+#contact input,
+#contact textarea {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+#contact textarea {
+    resize: vertical;
+}
+
+#contact button {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+body > footer {
+    padding: 24px 120px 24px 24px;
+    background-color: var(--color-primary);
+    background-image: url("../images/GravinaLogo640x640.png");
+    background-repeat: no-repeat;
+    background-position: right 24px top 24px;
+    background-size: 64px;
+}
+
+.about-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    align-items: center;
+    gap: 48px;
+    margin-bottom: 40px;
+}
+
+.about-intro h1 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.about-lead {
+    font-size: 1.25rem;
+}
+
+.about-portrait {
+    width: 100%;
+    border: 3px solid var(--color-secondary);
+    border-radius: 16px;
+}
+
+.about-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.about-details > section {
+    padding: 24px;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-muted);
+    border-radius: 12px;
+}
+
+.about-details h2 {
+    margin-top: 0;
+}
+
+.about-details ul {
+    padding-left: 24px;
+}
+
+.home-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    align-items: center;
+    gap: 32px;
+}
+
+.intro-copy h1 {
+    margin-top: 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.intro-portrait {
+    width: 100%;
+    border: 3px solid var(--color-secondary);
+    border-radius: 16px;
+}
+
+.quote-card {
+    grid-column: 1 / -1;
+    padding: 24px;
+    background-color: var(--color-primary);
+    border-left: 5px solid var(--color-secondary);
+    border-radius: 12px;
+}
+
+.quote-card h2 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.quote-card figure {
+    margin: 20px 0;
+}
+
+.quote-card blockquote {
+    margin: 0;
+}
+
+#quote-text {
+    margin: 0;
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    line-height: 1.5;
+}
+
+#quote-text::before {
+    content: "“";
+}
+
+#quote-text::after {
+    content: "”";
+}
+
+#quote-source {
+    margin-top: 16px;
+    color: var(--color-text);
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+    align-items: start;
+    gap: 28px;
+    margin-bottom: 24px;
+    padding: 24px;
+    border: 1px solid var(--color-muted);
+    border-radius: 12px;
+}
+
+.project-image {
+    display: inline-block;
+    width: fit-content;
+    max-width: 100%;
+    justify-self: start;
+    align-self: start;
+}
+
+.project-image img {
+    width: 300px;
+    border-radius: 8px;
+}
+
+.project-details {
+    min-width: 0;
+}
+
+.project-details h2 {
+    margin-top: 0;
+}
+
+/* Respect hidden controls until their JavaScript is ready. */
+[hidden] {
+    display: none !important;
+}
+
+.quote-note {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.875rem;
+    color: var(--color-text);
+}
+
+/* Stack portraits and project cards on smaller screens. */
+@media (max-width: 700px) {
+    .about-intro,
+    .about-details,
+    .home-intro,
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .about-intro {
+        gap: 24px;
+    }
+
+    .about-portrait,
+    .intro-portrait {
+        max-width: 280px;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 600px) {
+    body > header > nav {
+        width: 100%;
+        margin-left: 0;
+        gap: 16px;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+}

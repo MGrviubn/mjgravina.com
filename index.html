@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Matthew Gravina | Portfolio</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="scripts/quotes.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <img src="images/GravinaLogo640x640.png" alt="Matthew Gravina home" width="80">
+            </a>
+            <p>Matthew Gravina</p>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="webdevelopment.html">Web Development</a>
+                <a href="about.html">About Me</a>
+            </nav>
+        </header>
+
+        <main class="home-grid">
+            <section id="about-me" class="home-intro">
+                <div class="intro-copy">
+                    <h1>Personal Portfolio</h1>
+                    <p>Web development projects and learning in progress.</p>
+                    <a class="button" href="webdevelopment.html">View Web Development</a>
+                </div>
+                <img
+                    class="intro-portrait"
+                    src="images/portrait.jpg"
+                    alt="Portrait of Matthew Gravina"
+                    width="300">
+                <section class="quote-card" aria-labelledby="quote-heading">
+                    <h2 id="quote-heading">Quote of the Day</h2>
+                    <figure aria-live="polite" aria-atomic="true">
+                        <blockquote>
+                            <p id="quote-text">
+                                Were I to await perfection, my work would never be finished.
+                            </p>
+                        </blockquote>
+                        <figcaption id="quote-source">
+                            <span id="quote-author">Ostian Delafour</span> —
+                            <cite id="quote-work">Fulgrim</cite><span id="quote-credit">, Graham McNeill</span>
+                            <span id="quote-note" class="quote-note" hidden></span>
+                        </figcaption>
+                    </figure>
+                    <button class="button" id="next-quote" type="button" hidden>Next quote</button>
+                </section>
+            </section>
+
+            <section>
+                <h2>Explore My Work</h2>
+                <ul>
+                    <li>
+                        <a class="button" href="webdevelopment.html">Web Development</a>
+                    </li>
+                    <li>Electronics — Coming later</li>
+                    <li>Networking — Coming later</li>
+                    <li>AI — Coming later</li>
+                    <li>Résumé — Coming later</li>
+                    <li>Learning Journal — Coming later</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Learning Focus</h2>
+                <ul>
+                    <li>HTML structure</li>
+                    <li>Project organization</li>
+                    <li>Page design</li>
+                </ul>
+            </section>
+
+            <section id="project-overview">
+                <h2>Project Overview</h2>
+                <table>
+                    <caption>Web development projects</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Project</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>WWR</td>
+                            <td>A rafting website built with HTML and CSS.</td>
+                        </tr>
+                        <tr>
+                            <td>Prophet Card</td>
+                            <td>A styled information card with an image, text, and a list.</td>
+                        </tr>
+                        <tr>
+                            <td>Devotional List</td>
+                            <td>A devotional collection using an HTML table and form.</td>
+                        </tr>
+                        <tr>
+                            <td>Halloween Page</td>
+                            <td>A holiday design created by styling existing HTML with CSS.</td>
+                        </tr>
+                        <tr>
+                            <td>Christ Art Gallery</td>
+                            <td>A CSS Grid image gallery with previews linking to larger images.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Phone: (208)555-1234</p>
+                <p>Email: mgravina@byui.edu</p>
+                <form aria-describedby="contact-note">
+                    <p id="contact-note">This practice form does not send messages yet.</p>
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" name="name" autocomplete="name" required>
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="email" autocomplete="email" required>
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="5" required></textarea>
+                    <button type="submit" disabled>Send message — unavailable</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Matthew Gravina | Personal Portfolio</p>
+            <nav aria-label="Class navigation">
+                <a href="index.html">Home</a>
+                <a href="wdd130/wwr/index.html">WWR</a>
+                <a href="webdevelopment.html#ice">ICE</a>
+                <a href="about.html">About Me</a>
+            </nav>
+        </footer>
+    </body>
+</html>
