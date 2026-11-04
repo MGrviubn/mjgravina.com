@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Feed Sign Up</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background: rgb(120, 96, 64);
+        }
+
+        * {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(120, 96, 64);
+    font-family: "Times New Roman", serif;
+}
+
+/* Outer card */
+#formContainer {
+    width: 420px;
+    max-width: calc(100% - 32px);
+    margin: 17px auto;
+    border: 10px solid #163583;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: white;
+}
+
+/* Image and titles */
+.feed-header {
+    position: relative;
+    height: 170px;
+    background-image: url("images/jesus_feeds_5000.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.feed-header h1,
+.feed-header h2 {
+    color: white;
+    line-height: 1.1;
+    text-shadow: 2px 2px 2px black;
+}
+
+.feed-header h1 {
+    font-size: 36px;
+}
+
+.feed-header h2 {
+    font-size: 30px;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Form heading */
+#formContainer > h3 {
+    margin: 20px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Labels and inputs */
+#myForm {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    align-items: center;
+    padding: 0 20px 20px;
+}
+
+#myForm input[type="text"],
+#myForm input[type="password"],
+#myForm input[type="email"] {
+    width: 100%;
+    min-width: 0;
+    height: 21px;
+    border: 1px solid #888;
+    border-radius: 2px;
+}
+
+/* Checkbox rows and submit row */
+#myForm section {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+#myForm button[type="submit"] {
+    cursor: pointer;
+}
+
+/* Book covers */
+.scripture-books {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 3px;
+    background-color: white;
+}
+
+.scripture-books img {
+    display: block;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Results displayed by the JavaScript */
+#output {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+    overflow-wrap: anywhere;
+}
+
+#output:empty {
+    display: none;
+}
+    </style>
+</head>
+
+<body>
+    <div id="formContainer">
+        <header class="feed-header">
+          <button type="button" id="closeBtn"      aria-label="Close signup form">X</button>
+          <h1>Daily Feed</h1>
+          <h2>Scripture a Day</h2>
+        </header>
+
+        <h3>Sign Up for Daily Scripture Feed</h3>
+        <form id="myForm">
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Gender:</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+
+            <section>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to newsletter</label>
+            </section>
+
+            <section>
+                <input type="checkbox" id="conditions" name="conditions" required>
+                <label for="conditions">I acknowledge the terms and conditions</label>
+            </section>
+
+            <section>
+                <button type="submit">Submit</button>
+            </section>
+        </form>
+
+        <div class="scripture-books">
+        <img src="images/old_testament.webp" alt="Old Testament">
+        <img src="images/new_testament.webp" alt="New Testament">
+        <img src="images/book_of_mormon.webp" alt="Book of Mormon">
+        <img src="images/doctrine_and_covenants.webp"
+            alt="Doctrine and Covenants">
+        <img src="images/pearl_of_great_price.webp"
+            alt="Pearl of Great Price">
+        </div>
+    </div>
+
+    <div id="output"></div>
+
+    <script>
+        // Here is some Javascript to start looking forward to wdd131
+        document.getElementById("closeBtn").addEventListener("click", function () {
+            document.getElementById("formContainer").style.display = "none";
+         });
+        const form = document.getElementById('myForm');
+        const output = document.getElementById('output');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Stop form from actually submitting
+
+            const formData = new FormData(form);
+            const entries = [];
+
+            for (const [key, value] of formData.entries()) {
+                if (key == "password") {
+                    entries.push(`<strong>${key}</strong>: ${value} (you should probably encrypt the password)`);
+                } else {
+                    entries.push(`<strong>${key}</strong>: ${value}`);
+                }
+            }
+
+            output.innerHTML = `
+            <br>  
+            <h3>Here is the data that would be sent to the server:</h3>
+            <ul>
+                ${entries.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+            `;
+                });
+    </script>
+
+</body>
+
+</html>
