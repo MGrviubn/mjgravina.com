@@ -26,7 +26,7 @@ const quotes = [
         "credit": ""
     },
     {
-        "text": "I craved the strength and certainty of steel.",
+        "text": "From the moment I understood the weakness of my flesh, it disgusted me. I craved the strength and certainty of steel.",
         "author": "Magos-Dominus Reditus",
         "work": "Warhammer 40,000: Mechanicus (2018)",
         "credit": "Teaser-trailer monologue"
