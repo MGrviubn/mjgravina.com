@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Quotes | Matthew Gravina</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="scripts/quote-data.js" defer></script>
+        <script src="scripts/quote-search.js" defer></script>
+        <link rel="stylesheet" href="styles/image-fallback.css">
+        <script src="scripts/image-fallback.js" defer></script>
+        <link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    </head>
+    <body>
+        <header>
+            <a href="/">
+                <img src="images/GravinaLogo640x640.png" alt="Matthew Gravina home" width="80">
+            </a>
+            <p>Matthew Gravina</p>
+            <nav aria-label="Main navigation">
+                <a href="/">Home</a>
+                <a href="/webdevelopment.html">Web Development</a>
+                <a href="/about.html">About Me</a>
+            </nav>
+        </header>
+
+        <main class="quotes-page">
+            <h1>All Quotes</h1>
+            <p><a href="/">Home</a> / All Quotes</p>
+            <p class="quotes-intro">search for a particular quote.</p>
+
+            <form id="quote-search" class="quote-search-form" role="search" aria-describedby="quote-search-help">
+                <fieldset id="quote-search-controls" disabled>
+                    <legend>search</legend>
+                    <div class="quote-search-fields">
+                        <div class="form-field">
+                            <label for="quote-query">Search words</label>
+                            <input
+                                type="search"
+                                id="quote-query"
+                                name="query"
+                                placeholder="enter words within the quote to find it."
+                                aria-describedby="quote-search-help">
+                        </div>
+                    </div>
+                    <p id="quote-search-help">Search checks only the quote text, ignores capitalization, and matches every word you enter. Leave it blank to show all quotes.</p>
+                    <div class="quote-actions">
+                        <button class="button" type="submit">search.</button>
+                        <button class="button" id="show-all-quotes" type="button">Show All Quotes</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <noscript>
+                <p>Enable JavaScript to display and search the quote collection.</p>
+            </noscript>
+            <p id="quote-status" role="status" aria-live="polite" aria-atomic="true">Loading quotes…</p>
+            <p id="quote-empty" class="quote-empty" hidden>Nothing found.</p>
+            <ol id="quote-list" class="quote-list" aria-label="Quote collection"></ol>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>© 2026 Matthew Gravina | Personal Portfolio</p>
+                <section id="contact" class="footer-contact" aria-labelledby="footer-contact-heading">
+                    <h2 id="footer-contact-heading">Contact</h2>
+                    <address>
+                        <!-- Reserved for your confirmed public contact information.
+                             Add plain-text email, phone, and optional address here.
+                             Use <br> between lines as needed. -->
+                    </address>
+                </section>
+            </div>
+            <a class="footer-logo" href="/" aria-label="Home">
+                <img src="images/GravinaLogo640x640.png" alt="Matthew Gravina home" width="80" height="80">
+            </a>
+        </footer>
+    </body>
+</html>

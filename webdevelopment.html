@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Web Development | Matthew Gravina</title>
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/image-fallback.css">
+        <script src="scripts/image-fallback.js" defer></script>
+        <link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
     </head>
     <body>
         <header>
@@ -200,15 +204,20 @@
         </main>
 
         <footer>
-            <p>© 2026 Matthew Gravina | Personal Portfolio</p>
-            <section id="contact" class="footer-contact" aria-labelledby="footer-contact-heading">
-                <h2 id="footer-contact-heading">Contact</h2>
-                <address>
-                    <!-- Reserved for your confirmed public contact information.
-                         Add plain-text email, phone, and optional address here.
-                         Use <br> between lines as needed. -->
-                </address>
-            </section>
+            <div class="footer-content">
+                <p>© 2026 Matthew Gravina | Personal Portfolio</p>
+                <section id="contact" class="footer-contact" aria-labelledby="footer-contact-heading">
+                    <h2 id="footer-contact-heading">Contact</h2>
+                    <address>
+                        <!-- Reserved for your confirmed public contact information.
+                             Add plain-text email, phone, and optional address here.
+                             Use <br> between lines as needed. -->
+                    </address>
+                </section>
+            </div>
+            <a class="footer-logo" href="/" aria-label="Home">
+                <img src="images/GravinaLogo640x640.png" alt="Matthew Gravina home" width="80" height="80">
+            </a>
         </footer>
     </body>
 </html>
