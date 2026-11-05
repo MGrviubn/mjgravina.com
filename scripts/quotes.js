@@ -1,41 +1,50 @@
 // Homepage controls use the shared collection in quote-data.js.
-const quoteText = document.querySelector("#quote-text");
-const quoteAuthor = document.querySelector("#quote-author");
-const quoteWork = document.querySelector("#quote-work");
-const quoteCredit = document.querySelector("#quote-credit");
-const quoteNote = document.querySelector("#quote-note");
-const quoteHeading = document.querySelector("#quote-heading");
-const nextQuoteButton = document.querySelector("#next-quote");
+(() => {
+    const quoteText = document.querySelector("#quote-text");
+    const quoteAuthor = document.querySelector("#quote-author");
+    const quoteWork = document.querySelector("#quote-work");
+    const quoteCredit = document.querySelector("#quote-credit");
+    const quoteNote = document.querySelector("#quote-note");
+    const quoteHeading = document.querySelector("#quote-heading");
+    const nextQuoteButton = document.querySelector("#next-quote");
 
-// There is no current quote until the first random selection.
-let quoteIndex = -1;
+    // Keep the button visible and explain when the shared data cannot load.
+    if (typeof quotes === "undefined" || !Array.isArray(quotes) || quotes.length === 0) {
+        nextQuoteButton.disabled = true;
+        quoteNote.textContent = "Unable to load quotes. Refresh.";
+        quoteNote.hidden = false;
+        return;
+    }
 
-function showQuote() {
-    const quote = quotes[quoteIndex];
+    // There is no current quote until the first random selection.
+    let quoteIndex = -1;
 
-    quoteText.textContent = quote.text;
-    quoteAuthor.textContent = quote.author;
-    quoteWork.textContent = quote.work;
-    quoteCredit.textContent = quote.credit ? ", " + quote.credit : "";
-    quoteNote.textContent = quote.note || "";
-    quoteNote.hidden = !quote.note;
-    quoteHeading.textContent = "One of my favorite quotes.";
-}
+    function showQuote() {
+        const quote = quotes[quoteIndex];
 
-function showRandomQuote() {
-    let randomIndex;
+        quoteText.textContent = quote.text;
+        quoteAuthor.textContent = quote.author;
+        quoteWork.textContent = quote.work;
+        quoteCredit.textContent = quote.credit ? ", " + quote.credit : "";
+        quoteNote.textContent = quote.note || "";
+        quoteNote.hidden = !quote.note;
+        quoteHeading.textContent = "One of my favorite quotes.";
+    }
 
-    // Pick again if the result matches the quote currently on screen.
-    do {
-        randomIndex = Math.floor(Math.random() * quotes.length);
-    } while (quotes.length > 1 && randomIndex === quoteIndex);
+    function showRandomQuote() {
+        let randomIndex;
 
-    quoteIndex = randomIndex;
-    showQuote();
-}
+        // Pick again if the result matches the quote currently on screen.
+        do {
+            randomIndex = Math.floor(Math.random() * quotes.length);
+        } while (quotes.length > 1 && randomIndex === quoteIndex);
 
-nextQuoteButton.addEventListener("click", showRandomQuote);
+        quoteIndex = randomIndex;
+        showQuote();
+    }
 
-// Choose a random quote whenever the homepage loads.
-showRandomQuote();
-nextQuoteButton.hidden = false;
+    nextQuoteButton.addEventListener("click", showRandomQuote);
+
+    // Choose a random quote whenever the homepage loads.
+    showRandomQuote();
+})();
