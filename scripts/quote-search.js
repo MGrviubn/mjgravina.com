@@ -1,8 +1,8 @@
 // Visible messages are kept here so Matthew can supply replacement wording.
 const quoteMessages = {
     missingReason: "Personal explanation not added yet.",
-    reasonHeading: "I chose this quote because....",
-    loadError: "unable to load quotes. refresh.",
+    reasonHeading: "I chose this quote because…",
+    loadError: "Unable to load quotes. Refresh.",
     allCount: (total) => `Showing all ${total} quotes.`,
     filteredCount: (shown, total) => `Showing ${shown} of ${total} quotes.`
 };

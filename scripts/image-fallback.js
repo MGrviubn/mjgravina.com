@@ -1,6 +1,6 @@
 // Show a visible backup without replacing meaningful image descriptions.
 (() => {
-    const message = "image failed to load";
+    const message = "Image failed to load.";
 
     document.querySelectorAll("img").forEach((image) => {
         let fallback;
