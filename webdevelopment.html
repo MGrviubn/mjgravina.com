@@ -8,43 +8,43 @@
     </head>
     <body>
         <header>
-            <a href="index.html">
+            <a href="/">
                 <img src="images/GravinaLogo640x640.png" alt="Matthew Gravina home" width="80">
             </a>
             <p>Matthew Gravina</p>
             <nav aria-label="Main navigation">
-                <a href="index.html">Home</a>
-                <a href="webdevelopment.html">Web Development</a>
-                <a href="about.html">About Me</a>
+                <a href="/">Home</a>
+                <a href="/webdevelopment.html">Web Development</a>
+                <a href="/about.html">About Me</a>
             </nav>
         </header>
 
         <main>
             <h1>Web Development</h1>
-            <p><a href="index.html">Home</a> / Web Development</p>
-            <article class="project-card">
-                <a href="wdd130/wwr/index.html" class="project-image">
-                    <img
-                        src="images/wwr_splash.png"
-                        alt="Preview of the White Water Rafting website"
-                        width="300">
-                </a>
-                <div class="project-details">
-                    <h2>White Water Rafting</h2>
-                    <p>
-                        Full webpage assembly, my first introduction to HTML and CSS. I learned how
-                        HTML organizes a website’s content and how CSS controls its appearance. This
-                        project helped me practice connecting pages, images, and styles into a
-                        complete website.
-                    </p>
-                    <p>Completed: Oct 8, 2026</p>
-                    <a href="wdd130/wwr/index.html" target="_blank" rel="noopener" class="button">
-                        Go to Project Webpage
-                    </a>
-                </div>
-            </article>
-            <div id="ice">
+            <p><a href="/">Home</a> / Web Development</p>
+            <div class="project-grid">
                 <article class="project-card">
+                    <a href="wdd130/wwr/index.html" class="project-image">
+                        <img
+                            src="images/wwr_splash.png"
+                            alt="Preview of the White Water Rafting website"
+                            width="300">
+                    </a>
+                    <div class="project-details">
+                        <h2>White Water Rafting</h2>
+                        <p>
+                            Full webpage assembly, my first introduction to HTML and CSS. I learned how
+                            HTML organizes a website’s content and how CSS controls its appearance. This
+                            project helped me practice connecting pages, images, and styles into a
+                            complete website.
+                        </p>
+                        <p>Completed: Oct 8, 2026</p>
+                        <a href="wdd130/wwr/index.html" target="_blank" rel="noopener" class="button">
+                            Go to Project Webpage
+                        </a>
+                    </div>
+                </article>
+                <article class="project-card" id="ice">
                     <a href="wdd130/ice/prophet_card.html" class="project-image">
                         <img
                             src="images/prophet_splash.png"
@@ -201,12 +201,14 @@
 
         <footer>
             <p>© 2026 Matthew Gravina | Personal Portfolio</p>
-            <nav aria-label="Class navigation">
-                <a href="index.html">Home</a>
-                <a href="wdd130/wwr/index.html">WWR</a>
-                <a href="webdevelopment.html#ice">ICE</a>
-                <a href="about.html">About Me</a>
-            </nav>
+            <section id="contact" class="footer-contact" aria-labelledby="footer-contact-heading">
+                <h2 id="footer-contact-heading">Contact</h2>
+                <address>
+                    <!-- Reserved for your confirmed public contact information.
+                         Add plain-text email, phone, and optional address here.
+                         Use <br> between lines as needed. -->
+                </address>
+            </section>
         </footer>
     </body>
 </html>
