@@ -1,0 +1,23 @@
+/* This small stylesheet is shared with the standalone project pages. */
+img.image-load-failed,
+.image-fallback[hidden] {
+    display: none !important;
+}
+
+.image-fallback {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 3rem;
+    max-width: 100%;
+    padding: 12px;
+    border: 1px dashed var(--color-muted, #8A95A5);
+    border-radius: 6px;
+    background-color: var(--color-background, #202024);
+    color: var(--color-text, #E1E2EF);
+    font: inherit;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    text-align: center;
+}

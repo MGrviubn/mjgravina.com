@@ -81,12 +81,19 @@ body > header > nav a {
     font: inherit;
     text-decoration: none;
     cursor: pointer;
+    transition: transform 180ms ease, background-color 180ms ease, color 180ms ease;
 }
 
 .button:hover,
 body > header > nav a:hover {
     background-color: var(--color-secondary);
     color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.button:active,
+body > header > nav a:active {
+    transform: translateY(0);
 }
 
 .button:focus-visible,
@@ -112,8 +119,27 @@ body > header > nav a:focus-visible {
 }
 
 body > footer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 80px;
+    align-items: start;
+    gap: 24px;
     padding: 24px;
     background-color: var(--color-primary);
+}
+
+.footer-content {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.footer-logo {
+    display: inline-block;
+    width: 80px;
+    justify-self: end;
+}
+
+.footer-logo img {
+    width: 100%;
 }
 
 .footer-contact {
@@ -258,6 +284,8 @@ body > footer {
     max-width: 100%;
     justify-self: start;
     align-self: start;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .project-image img {
@@ -285,6 +313,189 @@ body > footer {
     color: var(--color-text);
 }
 
+/* Shared controls for the homepage quote and the full collection. */
+.quote-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.quote-search-form {
+    margin: 24px 0;
+    padding: 24px;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-muted);
+    border-radius: 12px;
+}
+
+.quote-search-form fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.quote-search-form legend {
+    margin-bottom: 16px;
+    padding: 0;
+    color: var(--color-secondary);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.quote-search-fields {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+}
+
+.form-field {
+    display: grid;
+    align-content: start;
+    gap: 8px;
+    min-width: 0;
+}
+
+.quote-search-form input {
+    min-width: 0;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color-muted);
+    border-radius: 6px;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font: inherit;
+}
+
+.quote-search-form input:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+.quote-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin: 24px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.quote-list > li {
+    min-width: 0;
+}
+
+.quote-entry {
+    height: 100%;
+    padding: 24px;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-muted);
+    border-top: 3px solid var(--color-secondary);
+    border-radius: 12px;
+    overflow-wrap: anywhere;
+}
+
+.quote-entry h2,
+.quote-entry h3 {
+    font-size: 1rem;
+}
+
+.quote-entry h2 {
+    margin-top: 0;
+}
+
+.quote-entry figure {
+    margin: 16px 0;
+}
+
+.quote-entry blockquote,
+.quote-entry blockquote p {
+    margin: 0;
+}
+
+.quote-entry blockquote {
+    font-size: 1.125rem;
+}
+
+.quote-entry blockquote p::before {
+    content: "“";
+}
+
+.quote-entry blockquote p::after {
+    content: "”";
+}
+
+.quote-entry figcaption {
+    margin-top: 12px;
+}
+
+.quote-reason {
+    margin-bottom: 0;
+}
+
+.quote-comment {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--color-muted);
+}
+
+.quote-comment h3 {
+    margin-top: 0;
+}
+
+.quote-empty {
+    padding: 20px;
+    border: 1px solid var(--color-secondary);
+    border-radius: 8px;
+}
+
+/* Small hover movements keep the established colors and readable text. */
+.project-card,
+.quote-card,
+.quote-entry,
+.about-details > section {
+    transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease, box-shadow 180ms ease;
+}
+
+.project-card:hover,
+.project-card:focus-within,
+.quote-card:hover,
+.quote-card:focus-within,
+.quote-entry:hover,
+.about-details > section:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-secondary);
+    box-shadow: 0 6px 16px rgb(0 0 0 / 25%);
+}
+
+.project-card:hover,
+.project-card:focus-within {
+    background-color: var(--color-primary);
+}
+
+.project-image img,
+body > header > a img,
+.footer-logo img,
+.intro-portrait,
+.about-portrait {
+    transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.project-image:hover img,
+.project-image:focus-visible img,
+body > header > a:hover img,
+body > header > a:focus-visible img,
+.footer-logo:hover img,
+.footer-logo:focus-visible img {
+    transform: scale(1.04);
+}
+
+.intro-portrait:hover,
+.about-portrait:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-accent);
+}
+
 /* Compact previews leave room for readable text in each desktop card. */
 @media (min-width: 1000px) {
     .project-grid {
@@ -303,7 +514,9 @@ body > footer {
     .about-intro,
     .about-details,
     .home-intro,
-    .project-card {
+    .project-card,
+    .quote-list,
+    .quote-search-fields {
         grid-template-columns: 1fr;
     }
 
@@ -327,5 +540,23 @@ body > footer {
 
     .home-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Keep color feedback while respecting reduced-motion preferences. */
+@media (prefers-reduced-motion: reduce) {
+    .button,
+    body > header > nav a,
+    body > header > a img,
+    .footer-logo img,
+    .project-card,
+    .project-image img,
+    .quote-card,
+    .quote-entry,
+    .about-details > section,
+    .intro-portrait,
+    .about-portrait {
+        transition: none !important;
+        transform: none !important;
     }
 }
