@@ -18,24 +18,21 @@
             <p>Matthew Gravina</p>
             <nav aria-label="Main navigation">
                 <a href="/">Home</a>
+                <a href="/projects.html">Projects &amp; Courses</a>
                 <a href="/webdevelopment.html">Web Development</a>
-                <a href="/about.html">About Me</a>
+                <a href="/about.html" aria-current="page">About Me</a>
+                <a href="/search.html">Search</a>
+                <a href="/resume.html">Résumé</a>
             </nav>
         </header>
 
-        <main class="about-page">
-            <section class="about-intro">
+        <main class="about-page" id="page-introduction">
+            <section class="about-intro" id="about-introduction">
                 <div>
                     <h1>About Me</h1>
-                    <p class="about-lead">
-                        I&#x27;m Matthew Gravina, a college student learning web development,
-                        electronics, networking, and artificial intelligence.
-                    </p>
-                    <p>
-                        I&#x27;m building this portfolio to bring together my coursework and
-                        personal projects. It gives me a place to document what I&#x27;m learning
-                        and how my skills develop through practice.
-                    </p>
+                    <p>I’m Matthew Gravina, and I’m pursuing a Bachelor of Science in Cybersecurity at Brigham Young University–Idaho after previously attending Modesto Junior College. My interests include computer systems, resin 3D printing, miniatures, and understanding how things work.</p>
+                    <p>I’m a member of The Church of Jesus Christ of Latter-day Saints and an Eagle Scout. I served a mission in Tucson, Arizona, which ended early because of the COVID-19 pandemic.</p>
+                    <p>Outside coursework, I enjoy hands-on projects and spending time with my pets. Some of their less dignified moments may also find their way into this portfolio.</p>
                 </div>
                 <img
                     class="about-portrait"
@@ -44,32 +41,24 @@
                     width="300">
             </section>
             <div class="about-details">
-                <section>
-                    <h2>What I&#x27;m Learning</h2>
-                    <p>
-                        My current projects include building websites with HTML and CSS, configuring
-                        networks, and exploring electronics and motor control.
-                    </p>
-                    <ul>
-                        <li>Web development and page design</li>
-                        <li>Electronics and circuit planning</li>
-                        <li>Networking and troubleshooting</li>
-                        <li>Artificial intelligence tools</li>
-                    </ul>
+                <section id="what-im-learning">
+                    <h2>What I’m Learning</h2>
+                    <p>My current coursework includes networking, web development, electronics, and artificial intelligence. I’m practicing network configuration and troubleshooting, building websites with HTML and CSS, and working with circuits and wireless controllers.</p>
+                    <p>Alongside my classes, I’m learning about 3D modeling in Blender so I can begin creating my own printable designs.</p>
                 </section>
-                <section>
+                <section id="beyond-coursework">
                     <h2>Beyond Coursework</h2>
-                    <p>
-                        My interests include resin 3D printing, miniatures, and Warhammer. These
-                        interests also connect with projects such as planning a motorized model
-                        tank.
-                    </p>
-                    <p>
-                        This website is also a project of its own. I&#x27;m developing it from a
-                        class portal into a portfolio I can continue building.
-                    </p>
+                    <p>Outside class, I enjoy stories and imaginative worlds. I grew up with Pokémon, Spider-Man, and little green toy soldiers. That childhood interest in miniature armies is part of what draws me to Warhammer today, alongside its stories and theme.</p>
+                    <p>I’ve also enjoyed playing Dungeons &amp; Dragons and writing stories of my own, although I haven’t spent as much time on those interests lately.</p>
+                    <p>Finding Nemo was a childhood favorite, and my fascination with the ocean has stayed with me. Space captures my imagination too—another great ocean to explore.</p>
                 </section>
             </div>
+
+            <section id="my-pets" class="pet-section">
+                <h2>My Pets</h2>
+                <div class="photo-grid"><figure><a href="/images/personal/dino_pickle.jpg"><img src="/images/personal/dino_pickle.jpg" alt="My cat, Pickle." loading="lazy" decoding="async"></a><figcaption>My cat, Pickle.</figcaption></figure><figure><a href="/images/personal/silly_lola.jpg"><img src="/images/personal/silly_lola.jpg" alt="My dog, Lola." loading="lazy" decoding="async"></a><figcaption>My dog, Lola.</figcaption></figure><figure><a href="/images/personal/teddy.jpg"><img src="/images/personal/teddy.jpg" alt="My dog, Teddy." loading="lazy" decoding="async"></a><figcaption>My dog, Teddy.</figcaption></figure></div>
+                <p><a class="button" href="/gallery.html">Visit My Gallery</a></p>
+            </section>
         </main>
 
         <footer>

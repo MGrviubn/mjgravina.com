@@ -18,16 +18,20 @@
             <p>Matthew Gravina</p>
             <nav aria-label="Main navigation">
                 <a href="/">Home</a>
-                <a href="/webdevelopment.html">Web Development</a>
+                <a href="/projects.html">Projects &amp; Courses</a>
+                <a href="/webdevelopment.html" aria-current="page">Web Development</a>
                 <a href="/about.html">About Me</a>
+                <a href="/search.html">Search</a>
+                <a href="/resume.html">Résumé</a>
             </nav>
         </header>
 
-        <main>
+        <main id="page-introduction">
             <h1>Web Development</h1>
-            <p><a href="/">Home</a> / Web Development</p>
+            <p><a href="/">Home</a> / <a href="/projects.html">Projects &amp; Courses</a> / Web Development</p>
+            <p id="web-development-introduction">I’m learning web development through Web Fundamentals at BYU–Idaho. These projects help me practice HTML structure, CSS layout, and working with links, images, tables, and forms. I use course guidance and AI assistance as I learn.</p>
             <div class="project-grid">
-                <article class="project-card">
+                <article class="project-card" id="white-water-rafting">
                     <a href="wdd130/wwr/index.html" class="project-image">
                         <img
                             src="images/wwr_splash.png"
@@ -69,7 +73,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" id="devotional-list">
                     <a href="wdd130/ice/favorite_devo/favdevo.html" class="project-image">
                         <img
                             src="images/devo_splash.png"
@@ -94,7 +98,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" id="halloween-page">
                     <a href="wdd130/ice/halloween/index.html" class="project-image">
                         <img
                             src="images/halloween_splash.png"
@@ -115,7 +119,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" id="positioning-practice">
                     <a href="wdd130/ice/positioning/positioning.html" class="project-image">
                         <img
                             src="images/positioning.png"
@@ -140,7 +144,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" id="country-flags">
                     <a href="wdd130/ice/grid_flags/flags.html" class="project-image">
                         <img
                             src="images/country_flags.png"
@@ -161,7 +165,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" id="church-art-gallery">
                     <a href="wdd130/ice/gallery/gallery.html" class="project-image">
                         <img
                             src="images/church_gallery.png"
@@ -182,7 +186,7 @@
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" id="daily-feed-form">
                     <a href="wdd130/ice/signup/signup.html" class="project-image">
                         <img
                             src="images/signup.png"

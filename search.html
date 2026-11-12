@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search | Matthew Gravina</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/image-fallback.css">
+        <script src="scripts/image-fallback.js" defer></script>
+        <link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+        <script src="scripts/search-config.js" defer></script>
+        <script type="module" src="scripts/site-search.mjs"></script>
+    </head>
+    <body>
+        <header>
+            <a href="/">
+                <img src="images/GravinaLogo640x640.png" alt="Matthew Gravina home" width="80">
+            </a>
+            <p>Matthew Gravina</p>
+            <nav aria-label="Main navigation">
+                <a href="/">Home</a>
+                <a href="/projects.html">Projects &amp; Courses</a>
+                <a href="/webdevelopment.html">Web Development</a>
+                <a href="/about.html">About Me</a>
+                <a href="/search.html" aria-current="page">Search</a>
+                <a href="/resume.html">Résumé</a>
+            </nav>
+        </header>
+        <main class="content-page">
+            <h1>Search My Portfolio</h1>
+            <p>Find published passages, page names, and links to supporting sections.</p>
+            <form id="portfolio-search" class="quote-search-form" role="search" aria-describedby="search-help">
+                <label for="portfolio-query">What would you like to find?</label>
+                <input id="portfolio-query" name="q" type="search" required minlength="2" maxlength="240" placeholder="Has Matthew used CSS?" autocomplete="off">
+                <p id="search-help">Searches portfolio descriptions. Fictional quotations and class demonstration text are excluded. <a href="/quotes.html">Search the quote collection separately.</a></p>
+                <div class="quote-actions">
+                    <button class="button" id="keyword-search-button" type="submit" disabled>Keyword Search</button>
+                    <button class="button" id="ai-search-button" type="submit" disabled>AI Search</button>
+                </div>
+                <p class="search-provider">AI Search, powered by Cloudflare</p>
+                <div id="bot-check" hidden></div>
+            </form>
+            <p id="search-status" role="status" aria-live="polite">Loading search…</p>
+            <p id="search-empty" class="quote-empty" hidden>I couldn’t find that information on this website.</p>
+            <ul id="search-results" class="search-results"></ul>
+            <noscript><p>Search requires JavaScript. Browse <a href="/projects.html">Projects &amp; Courses</a> or <a href="/about.html">About Me</a>.</p></noscript>
+        </main>
+        <footer>
+            <div class="footer-identity">
+                <div class="footer-logo-row">
+                    <a class="footer-logo" href="/" aria-label="Home">
+                        <img src="images/GravinaLogo640x640.png" alt="Matthew Gravina home" width="80" height="80">
+                    </a>
+                    <nav class="footer-social" aria-label="Social profiles">
+                        <a class="footer-social-link" href="https://www.linkedin.com/in/mattgravina/" target="_blank" rel="noopener noreferrer" aria-label="Matthew Gravina on LinkedIn (opens in a new tab)">
+                            <img src="images/social/linkedin.svg" alt="LinkedIn" width="28" height="28">
+                        </a>
+                        <a class="footer-social-link" href="https://github.com/MGrviubn" target="_blank" rel="noopener noreferrer" aria-label="Matthew Gravina on GitHub (opens in a new tab)">
+                            <img src="images/social/github.svg" alt="GitHub" width="28" height="28">
+                        </a>
+                    </nav>
+                </div>
+                <p class="footer-copyright">© 2026 Matthew Gravina | Personal Portfolio</p>
+            </div>
+            <address id="contact" class="footer-contact" aria-label="Contact information">
+                <p>
+                    <span class="footer-contact-label">Personal Phone Number:</span>
+                    <a href="tel:+12099249893">(209) 924-9893 [Cell]</a>
+                </p>
+                <p>
+                    <span class="footer-contact-label">E-mail:</span>
+                    <a href="mailto:mjamesg726@gmail.com">mjamesg726@gmail.com</a>
+                </p>
+                <p>
+                    <span class="footer-contact-label">Currently Residing in</span>
+                    Rexburg, Idaho.
+                </p>
+            </address>
+        </footer>
+    </body>
+</html>

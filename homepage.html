@@ -19,25 +19,27 @@
             </a>
             <p>Matthew Gravina</p>
             <nav aria-label="Main navigation">
-                <a href="/">Home</a>
+                <a href="/" aria-current="page">Home</a>
+                <a href="/projects.html">Projects &amp; Courses</a>
                 <a href="/webdevelopment.html">Web Development</a>
                 <a href="/about.html">About Me</a>
+                <a href="/search.html">Search</a>
+                <a href="/resume.html">Résumé</a>
             </nav>
         </header>
 
-        <main class="home-grid">
+        <main class="home-grid" id="page-introduction">
             <section id="about-me" class="home-intro">
                 <div class="intro-copy">
                     <h1>Personal Portfolio</h1>
-                    <p>Web development projects and learning in progress.</p>
-                    <a class="button" href="webdevelopment.html">View Web Development</a>
+                    <p>I’m Matthew Gravina, a cybersecurity student at Brigham Young University–Idaho. I’m interested in understanding computer systems and finding tools and methods that help people and make those systems more secure. This portfolio brings together my coursework, personal projects, and interests.</p>
                 </div>
                 <img
                     class="intro-portrait"
                     src="images/portrait.jpg"
                     alt="Portrait of Matthew Gravina"
                     width="300">
-                <section class="quote-card" aria-labelledby="quote-heading">
+                <section data-content-type="quotation" class="quote-card" aria-labelledby="quote-heading">
                     <h2 id="quote-heading">One of my favorite quotes.</h2>
                     <figure aria-live="polite" aria-atomic="true">
                         <blockquote>
@@ -58,63 +60,20 @@
                 </section>
             </section>
 
-            <section>
+            <section id="explore-my-work">
                 <h2>Explore My Work</h2>
-                <ul>
-                    <li>
-                        <a class="button" href="webdevelopment.html">Web Development</a>
-                    </li>
-                    <li>Electronics — Coming later</li>
-                    <li>Networking — Coming later</li>
-                    <li>AI — Coming later</li>
-                    <li>Résumé — Coming later</li>
-                    <li>Learning Journal — Coming later</li>
-                </ul>
+                <p>Explore my work in web development, networking, electronics, resin 3D printing, and marine biology coursework. I use these pages to share what I’ve tried, what I’ve learned, and what I’m still developing.</p>
+                <div class="quote-actions">
+                    <a class="button" href="/projects.html">Projects &amp; Courses</a>
+                    <a class="button" href="/resume.html">Résumé — Draft</a>
+                </div>
             </section>
 
-            <section>
+            <section id="learning-focus">
                 <h2>Learning Focus</h2>
-                <ul>
-                    <li>HTML structure</li>
-                    <li>Project organization</li>
-                    <li>Page design</li>
-                </ul>
+                <p>I’m studying cybersecurity while building a foundation in networking, web development, electronics, and artificial intelligence. Through coursework and personal projects, I’m practicing how to follow a process, test results, and investigate problems when something doesn’t work as expected.</p>
             </section>
 
-            <section id="project-overview">
-                <h2>Project Overview</h2>
-                <table>
-                    <caption>Web development projects</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Project</th>
-                            <th scope="col">Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>WWR</td>
-                            <td>A rafting website built with HTML and CSS.</td>
-                        </tr>
-                        <tr>
-                            <td>Prophet Card</td>
-                            <td>A styled information card with an image, text, and a list.</td>
-                        </tr>
-                        <tr>
-                            <td>Devotional List</td>
-                            <td>A devotional collection using an HTML table and form.</td>
-                        </tr>
-                        <tr>
-                            <td>Halloween Page</td>
-                            <td>A holiday design created by styling existing HTML with CSS.</td>
-                        </tr>
-                        <tr>
-                            <td>Christ Art Gallery</td>
-                            <td>A CSS Grid image gallery with previews linking to larger images.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
 
         </main>
 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECEN / Tank Project | Matthew Gravina</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/image-fallback.css">
+        <script src="scripts/image-fallback.js" defer></script>
+        <link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    </head>
+    <body>
+        <header>
+            <a href="/">
+                <img src="images/GravinaLogo640x640.png" alt="Matthew Gravina home" width="80">
+            </a>
+            <p>Matthew Gravina</p>
+            <nav aria-label="Main navigation">
+                <a href="/">Home</a>
+                <a href="/projects.html">Projects &amp; Courses</a>
+                <a href="/webdevelopment.html">Web Development</a>
+                <a href="/about.html">About Me</a>
+                <a href="/search.html">Search</a>
+                <a href="/resume.html">Résumé</a>
+            </nav>
+        </header>
+        <main class="content-page" id="page-introduction">
+            <h1>ECEN / Tank Project</h1>
+            <p class="draft-notice" role="note">Draft — this page is still being developed.</p>
+            <p>I’m applying electronics coursework to practical circuits and a personal model tank project.</p>
+            <section id="wireless-tank" class="content-section">
+                <h2>Wireless Tank — In Progress</h2>
+                <p>I’m working toward a wirelessly controlled model tank using a freely available model that resembles a Warhammer 40,000 Baneblade.</p>
+                <p>So far, I’ve established a wireless connection between my controller badge and an ESP32 receiver. Inputs from the badge appear on a display connected to the receiver. I’m currently printing parts and ordering the other components needed for assembly.</p>
+                <p>The next goal is to assemble the tank and use the wireless controls to drive it. Physical movement remains a work in progress.</p>
+            </section>
+            <p class="model-credit">Model credit: <a href="https://cults3d.com/en/3d-model/game/broadsword-superheavy-tank">Broadsword Superheavy Tank</a> by nfeyma, available on Cults3D.</p>
+            <section id="motor-troubleshooting" class="content-section">
+                <h2>Motor Circuit Coursework</h2>
+                <p>In a classroom circuit, I checked the connections, repaired a loose motor lead by soldering it, and tested the motor separately. The circuit worked after I reversed the transistor’s orientation.</p>
+                <p>My teacher explained that the supplied transistor had a different lead order. The exercise gave me practice checking individual parts and connections when a circuit did not work as expected.</p>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-identity">
+                <div class="footer-logo-row">
+                    <a class="footer-logo" href="/" aria-label="Home">
+                        <img src="images/GravinaLogo640x640.png" alt="Matthew Gravina home" width="80" height="80">
+                    </a>
+                    <nav class="footer-social" aria-label="Social profiles">
+                        <a class="footer-social-link" href="https://www.linkedin.com/in/mattgravina/" target="_blank" rel="noopener noreferrer" aria-label="Matthew Gravina on LinkedIn (opens in a new tab)">
+                            <img src="images/social/linkedin.svg" alt="LinkedIn" width="28" height="28">
+                        </a>
+                        <a class="footer-social-link" href="https://github.com/MGrviubn" target="_blank" rel="noopener noreferrer" aria-label="Matthew Gravina on GitHub (opens in a new tab)">
+                            <img src="images/social/github.svg" alt="GitHub" width="28" height="28">
+                        </a>
+                    </nav>
+                </div>
+                <p class="footer-copyright">© 2026 Matthew Gravina | Personal Portfolio</p>
+            </div>
+            <address id="contact" class="footer-contact" aria-label="Contact information">
+                <p>
+                    <span class="footer-contact-label">Personal Phone Number:</span>
+                    <a href="tel:+12099249893">(209) 924-9893 [Cell]</a>
+                </p>
+                <p>
+                    <span class="footer-contact-label">E-mail:</span>
+                    <a href="mailto:mjamesg726@gmail.com">mjamesg726@gmail.com</a>
+                </p>
+                <p>
+                    <span class="footer-contact-label">Currently Residing in</span>
+                    Rexburg, Idaho.
+                </p>
+            </address>
+        </footer>
+    </body>
+</html>
