@@ -1,0 +1,11 @@
+{
+  "environment": "local static validation only",
+  "main_pages_checked": 12,
+  "generated_source_pages_checked": 57,
+  "indexed_passages": 56,
+  "issues": [],
+  "quote_scripts_and_daily_feed_unchanged": true,
+  "hostname_and_nojekyll_unchanged": true,
+  "search_data_bytes": 29972,
+  "indexed_text_characters": 8945
+}

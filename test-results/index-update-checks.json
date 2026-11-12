@@ -1,0 +1,8 @@
+{
+  "environment": "local disposable files",
+  "repeat_build_stable": true,
+  "changed_passage_gets_new_source_url": true,
+  "obsolete_source_deleted": true,
+  "original_site_untouched_by_test": true,
+  "unreviewed_new_root_page_excluded": true
+}

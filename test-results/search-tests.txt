@@ -1,0 +1,43 @@
+✔ approved monthly budget divides exactly across every month, including leap February (2.00325ms)
+✔ daily boundary uses Mountain Time (0.419014ms)
+✔ question wording and exact keywords return published CSS passages (4.529923ms)
+✔ related networking wording finds coursework and section links (4.66622ms)
+✔ missing information has no keyword evidence and uses exact required wording (2.390547ms)
+✔ fictional quotations and class demonstrations are excluded from the factual index (0.558695ms)
+✔ disabled configuration makes zero bot or upstream calls (6.991497ms)
+✔ valid request reserves quota and invokes exactly one retrieval-only hybrid search (15.691704ms)
+✔ unknown source URLs and fictional quote sources cannot become results (2.932456ms)
+✔ validation fails closed: {"botSuccess":false} (2.650299ms)
+✔ validation fails closed: {"hostname":"attacker.invalid"} (1.689877ms)
+✔ validation fails closed: {"action":"other-action"} (1.6858ms)
+✔ validation fails closed: {"tokenAge":301000} (1.679962ms)
+✔ validation fails closed: {"botError":true} (1.86423ms)
+✔ validation fails closed: {"stale":true} (1.823038ms)
+✔ validation fails closed: {"manifestError":true} (1.289871ms)
+✔ simultaneous reuse of one bot token admits at most one upstream call (10.741049ms)
+✔ reused request ID with a different bot token is rejected (2.091785ms)
+✔ rapid submissions are limited per client before bot validation (5.932034ms)
+✔ simultaneous clients cannot exceed the strict shared daily allowance (44.583487ms)
+✔ persistent quota survives a simulated deployment restart (1.75857ms)
+✔ storage failure prevents any paid search call (0.716735ms)
+✔ reservation failure after a valid bot check prevents upstream search (0.870677ms)
+✔ upstream failure burns the reservation and does not trigger retries (1.250071ms)
+✔ daily slots do not roll over and the next day receives its own allowance (1.744755ms)
+✔ a complete simulated month reserves exactly 500 searches and no more (159.144367ms)
+✔ new calendar month receives a fresh budget, preserving previous month counters (4.621031ms)
+✔ oversized and malformed requests never reach the paid service (1.081577ms)
+✔ alternate endpoints, methods and forged browser origins cannot bypass validation (0.954514ms)
+(node:13) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ UI default enables keywords and makes no AI or Turnstile requests (10.793088ms)
+✔ UI missing-information message matches the exact required text (5.551539ms)
+✔ UI daily exhaustion explains tomorrow and automatically shows keyword matches (6.362865ms)
+✔ UI network failure falls back locally without an automatic retry (4.100062ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 33
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 466.672276

@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mjgravina-protected-search",
+  "main": "index.mjs",
+  "compatibility_date": "2026-11-12",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{"pattern": "mjgravina.com/api/search", "zone_name": "mjgravina.com"}],
+  "vars": {"AI_ENABLED": "false", "SETUP_REVIEWED": "false"},
+  "ai_search": [{"binding": "AI_SEARCH", "instance_name": "mjgravina-portfolio"}],
+  "durable_objects": {"bindings": [{"name": "QUOTAS", "class_name": "SearchQuota"}]},
+  "migrations": [{"tag": "v1", "new_sqlite_classes": ["SearchQuota"]}],
+  "observability": {"enabled": false}
+}

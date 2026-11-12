@@ -25,9 +25,9 @@ My own personal website acting as a personal portfolio of my life and projects.
 The Web Development collection remains at `webdevelopment.html`. Its eight
 project cards use two columns at viewport widths of 1000 CSS pixels or more,
 and one column below that. The `#ice` link targets the first ICE challenge.
-Headers contain only Home, Web Development, and About Me. The former homepage
-contact form has been removed. Each portfolio footer contains a Contact section
-with an empty text area for confirmed public contact details.
+Headers retain Home, Web Development, and About Me, with Projects & Courses,
+Search, and Résumé added. The former homepage contact form remains removed.
+Each portfolio footer preserves the existing public contact details.
 
 The existing Web Development / ICE collection intentionally remains at
 `webdevelopment.html`; Matthew has overridden the `wdd130/ice.html` location.
@@ -67,10 +67,32 @@ fallback to assistive technology. Successful images keep their existing
 appearance; a successful retry restores the image.
 
 Each portfolio footer includes the Gravina logo linking to `/`, alongside
-the existing copyright and reserved contact text.
+the existing copyright and public contact details.
 
 ## Browser tab icon
 
 All HTML pages link to favicon assets derived from the existing Gravina logo.
 `favicon.ico` contains 16, 32, and 48 pixel versions; `images/favicon-32.png`
 provides a 32 pixel PNG version. Nested pages use paths back to the same icons.
+
+## November 2026 portfolio update
+
+Approved personal descriptions replace the homepage/About placeholders.
+The homepage Project Overview and View Web Development button are removed.
+`projects.html` links to Web Development, Marine Biology, Networking Skills,
+3D Printing, and ECEN / Tank Project. New subject collections and `resume.html`
+are clearly labeled draft. `gallery.html` contains nine selected photos; the
+About page includes the three selected pets. Photo shorthand names are retained
+and publication image metadata is cleaned.
+
+`search.html` provides browser keyword search. Cloudflare AI Search integration
+is prepared but disabled and unverified live. The approved quota is 500/month,
+spread across days in America/Denver. Read [SETUP_SEARCH.md](SETUP_SEARCH.md)
+for current prices, spending limits, account setup, and the approval boundary.
+Read [TEST_RESULTS.md](TEST_RESULTS.md) for local test scope and outstanding
+browser/live checks. [UPDATE_NOTES.md](UPDATE_NOTES.md) explains patch application.
+
+After editing public page text, run `python tools/build-search-data.py` and
+publish the regenerated files and deletions. It extracts factual descriptions,
+excludes quotations and class demo contents, and prepares linked source passages.
+Follow the documented disable/publish/purge/redeploy sequence for removals.

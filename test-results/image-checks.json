@@ -1,0 +1,461 @@
+{
+  "checked": 76,
+  "images": [
+    {
+      "path": "favicon.ico",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/GravinaLogo640x640.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/wwr_splash.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/halloween_splash.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/country_flags.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/prophet_splash.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/portrait.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/church_gallery.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/devo_splash.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/positioning.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/favicon-32.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/signup.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/dallin_oaks.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/christus.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/big/img5.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/big/img2.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/big/img3.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/big/img4.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/big/img7.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/big/img10.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/big/img11.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/big/img8.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/big/img1.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/big/img9.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/big/img12.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/big/img6.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/small/img8.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/small/img9.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/small/img11.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/small/img3.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/small/img4.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/small/img12.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/small/img7.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/small/img10.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/small/img6.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/small/img1.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/small/img2.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/gallery/images/small/img5.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/favorite_devo/images/icenter.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/halloween/images/halloween.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/signup/images/book_of_mormon.webp",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/signup/images/jesus_feeds_5000.jpeg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/signup/images/new_testament.webp",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/signup/images/old_testament.webp",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/signup/images/doctrine_and_covenants.webp",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/signup/images/pearl_of_great_price.webp",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/positioning/images/example6-hint.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/positioning/images/example2.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/positioning/images/example3.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/positioning/images/example6.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/positioning/images/example1.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/positioning/images/example4.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/positioning/images/example5.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/ice/positioning/images/example1-halfway.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/wwr/images/camping.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/wwr/images/Lorem_ipsum_oh_no.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/wwr/images/ai_raft_1280.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/wwr/images/twitter.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/wwr/images/mountains.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/wwr/images/river_icon.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/wwr/images/instagram.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/wwr/images/fire_icon.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/wwr/images/hero.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/wwr/images/rivers.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/wwr/images/facebook.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/wwr/images/rapids.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "wdd130/wwr/images/oars.png",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/personal/dino_pickle.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/personal/silly_lola.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/personal/fish.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/personal/teddy.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/personal/squid.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/personal/eagle_table.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/personal/mission_me.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/personal/eagle_food.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    },
+    {
+      "path": "images/personal/craw_final.jpg",
+      "pixels_unchanged": true,
+      "orientation_unchanged": true,
+      "non_rendering_exif_removed": true
+    }
+  ]
+}
