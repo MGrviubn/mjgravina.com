@@ -96,3 +96,5 @@ After editing public page text, run `python tools/build-search-data.py` and
 publish the regenerated files and deletions. It extracts factual descriptions,
 excludes quotations and class demo contents, and prepares linked source passages.
 Follow the documented disable/publish/purge/redeploy sequence for removals.
+
+website_v6
