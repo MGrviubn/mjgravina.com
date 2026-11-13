@@ -97,4 +97,12 @@ publish the regenerated files and deletions. It extracts factual descriptions,
 excludes quotations and class demo contents, and prepares linked source passages.
 Follow the documented disable/publish/purge/redeploy sequence for removals.
 
-website_v6
+website_v7
+
+
+## Version 7 update
+
+The résumé page links to a one-page PDF with confirmed contact details and LinkedIn.
+Portfolio headers use Home, AI Search, Projects & Courses, Web Development,
+Résumé, and About Me, in that order. The AI Search label retains the existing
+search page and configuration.

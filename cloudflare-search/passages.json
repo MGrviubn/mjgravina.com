@@ -1,5 +1,5 @@
 {
-  "version": "9c5bfc375eee308ba7da5f4236d1a18731cb721f6eef4dafa685e2c09410c204",
+  "version": "979d0f093e75558afeffd06130b7005b4575ff74f92d1666126dc8048a4e10ef",
   "passages": [
     {
       "title": "3D Printing",
@@ -385,6 +385,17 @@
       "kind": "portfolio-description",
       "draft": true,
       "source": "https://mjgravina.com/search-content/resume-658d2b7f82be.html"
+    },
+    {
+      "title": "Résumé — Draft",
+      "section": "Downloadable Résumé",
+      "text": "My cybersecurity résumé includes my contact details, education, technical coursework, and work experience.",
+      "anchor": "resume-pdf",
+      "id": "resume-5a99e1f6012c",
+      "url": "/resume.html#resume-pdf",
+      "kind": "portfolio-description",
+      "draft": true,
+      "source": "https://mjgravina.com/search-content/resume-5a99e1f6012c.html"
     },
     {
       "title": "Résumé — Draft",
